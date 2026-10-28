@@ -1,0 +1,13 @@
+scenario,model,cv_pr_auc,cv_roc_auc,cv_recall,cv_precision,cv_f1,cv_accuracy
+A_with_PageValues,CatBoost,0.8462,0.9678,0.9006,0.6311,0.7421,0.9016
+A_with_PageValues,XGBoost,0.8423,0.9666,0.9006,0.6299,0.7413,0.9011
+A_with_PageValues,LightGBM,0.834,0.9644,0.8264,0.6841,0.7483,0.9126
+A_with_PageValues,Logistic Regression,0.8325,0.9656,0.9244,0.5981,0.7262,0.8904
+A_with_PageValues,Random Forest,0.8219,0.9612,0.8317,0.6795,0.7476,0.9117
+A_with_PageValues,Decision Tree,0.8008,0.9569,0.9218,0.5671,0.7015,0.8762
+B_without_PageValues,Random Forest,0.5281,0.8259,0.5606,0.5064,0.5321,0.845
+B_without_PageValues,CatBoost,0.5232,0.8223,0.6594,0.4136,0.5082,0.7994
+B_without_PageValues,Logistic Regression,0.5223,0.8247,0.7323,0.366,0.488,0.7584
+B_without_PageValues,XGBoost,0.5167,0.8214,0.672,0.3947,0.4972,0.7865
+B_without_PageValues,LightGBM,0.4956,0.812,0.5772,0.4424,0.5009,0.8192
+B_without_PageValues,Decision Tree,0.4758,0.805,0.7078,0.3522,0.4692,0.7484

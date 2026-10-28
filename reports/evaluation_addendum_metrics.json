@@ -1,0 +1,39 @@
+{
+  "train_oof": {
+    "rows": 9600,
+    "buyers": 1509,
+    "prevalence": 0.1571875,
+    "model_pr_auc": 0.5244835036297941,
+    "random_rank_expected_pr_auc": 0.1571875,
+    "model_roc_auc": 0.8252431196203491,
+    "brier_model": 0.11896859979233332,
+    "brier_constant_prevalence": 0.13247958984375,
+    "log_loss_model": 0.38448574148250897,
+    "log_loss_constant_prevalence": 0.4349765443915614
+  },
+  "test_holdout": {
+    "rows": 2400,
+    "buyers": 377,
+    "prevalence": 0.15708333333333332,
+    "model_pr_auc": 0.5446608771921465,
+    "random_rank_expected_pr_auc": 0.15708333333333332,
+    "model_roc_auc": 0.8429663642645387,
+    "brier_model": 0.11632700682329168,
+    "brier_constant_prevalence": 0.13240815972222225,
+    "log_loss_model": 0.3795204104502773,
+    "log_loss_constant_prevalence": 0.4348015758117665
+  },
+  "selected_threshold": 0.72,
+  "test_confusion_matrix": {
+    "TN": 1933,
+    "FP": 90,
+    "FN": 223,
+    "TP": 154
+  },
+  "test_illustrative_net_value": 320.0,
+  "assumptions": {
+    "conversion_value": 50,
+    "nudge_success": 0.2,
+    "nudge_cost": 5
+  }
+}

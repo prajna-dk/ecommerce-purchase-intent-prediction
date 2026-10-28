@@ -1,0 +1,7 @@
+Sessions = COUNTROWS(v_sessions_enriched)
+Buyers = SUM(v_sessions_enriched[Converted])
+Conversion Rate = DIVIDE([Buyers], [Sessions])
+Flagged Sessions = CALCULATE(COUNTROWS(v_sessions_enriched), v_sessions_enriched[predicted] = 1)
+Buyers Caught = CALCULATE(COUNTROWS(v_sessions_enriched), v_sessions_enriched[predicted] = 1, v_sessions_enriched[Converted] = 1)
+Precision = DIVIDE([Buyers Caught], [Flagged Sessions])
+Recall = DIVIDE([Buyers Caught], [Buyers])
